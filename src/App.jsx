@@ -1,4 +1,5 @@
 import iconStar from "./assets/icon-star.svg"
+import ilustrationThankYou from "./assets/illustration-thank-you.svg"
 import { useState } from "react"
 
 export function App() {
@@ -42,7 +43,13 @@ export function App() {
     </div>
     ) : (
       <div className="bg-gradient-dark text-white mx-6 p-6 rounded-2xl font-overpass text-center">
-        <p>{notaAvaliacao}</p>
+        <img className="mx-auto mb-6" src={ilustrationThankYou} alt="ilustration Thank You" />
+
+        <p className="text-orange bg-dark-blue w-fit mx-auto px-3 py-1.5 rounded-3xl mb-6">You selected {notaAvaliacao} out of 5</p>
+
+        <h1 className="text-2xl font-bold mb-2.5 text-center">Thank You!</h1>
+
+        <p className="text-sm text-light-grey leaing-1 text-center">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
       </div>
     )  
   )
