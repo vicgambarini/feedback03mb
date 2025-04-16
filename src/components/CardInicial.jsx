@@ -2,6 +2,9 @@ import iconStar from "../assets/icon-star.svg"
 import { InputButton } from "./inputButton"
 
 export function CardInicial( {handleMudarNota, submit} ) {
+    function handleMudarNotaAvaliacao(nota) {
+        setNotaAvaliacao(nota)
+    }
     return (
     
         <div className="flex justify-between mb-6">
